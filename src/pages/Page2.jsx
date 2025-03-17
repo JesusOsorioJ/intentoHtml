@@ -24,9 +24,7 @@ export default function Page2({
     quiensoy.current?.scrollIntoView({ behavior: "smooth" });
   }, []);
 
-
-    const juanleon = useRef(null);
-  
+  const juanleon = useRef(null);
 
   return (
     <div ref={quiensoy} className="text-white text-[16px]">
@@ -45,7 +43,7 @@ export default function Page2({
       />
 
       <section
-        className="flex flex-col justify-between gap-10 items-center py-30 px-10 lg:px-30 h-screen
+        className="flex flex-col justify-between gap-10 items-center py-30 px-10 lg:px-30
       bg-[url(./assets/obama.jpg)]  bg-cover min-h-screen w-full bg-blend-multiply bg-[#000000a8]
       "
       >
@@ -74,15 +72,22 @@ export default function Page2({
             translate="translate-y-full"
             idFigure="fsdfsdf"
           >
-            <button onClick={() => {
+            <button
+              onClick={() => {
                 juanleon.current?.scrollIntoView({ behavior: "smooth" });
-              }} className="word-container">{data[lang].acciones_botonSeguir}</button>
+              }}
+              className="word-container"
+            >
+              {data[lang].acciones_botonSeguir}
+            </button>
           </EfectoAparecer>
         </div>
       </section>
 
-      
-      <section ref={juanleon}  className="flex flex-col gap-5 justify-start items-center py-20 px-5 lg:px-30 bg-black min-h-screen">
+      <section
+        ref={juanleon}
+        className="flex flex-col gap-5 justify-start items-center py-20 px-5 lg:px-30 bg-black min-h-screen"
+      >
         <EfectoAparecer
           size="min-h-[120px]"
           translate="translate-y-full"
@@ -104,7 +109,10 @@ export default function Page2({
               idFigure="ffsdf4rf34"
               delay={4000}
             >
-              <BottonPer text={data[lang].acciones_botonSeguir} referencia={fotografia} />
+              <BottonPer
+                text={data[lang].acciones_botonSeguir}
+                referencia={fotografia}
+              />
             </EfectoAparecer>
           </div>
           <div className="size-[200px] lg:hidden my-[-60px] bg-[url(./assets/comida1.jpg)] bg-cover" />
@@ -133,8 +141,10 @@ export default function Page2({
 
       <div className="bg-[url(./assets/landing2.jpg)] bg-cover h-[50vh] w-full bg-blend-multiply bg-[#00000073]" />
 
-
-      <section ref={fotografia} className="flex flex-col gap-10 justify-start items-center py-20 px-5 lg:px-30 bg-black min-h-screen">
+      <section
+        ref={fotografia}
+        className="flex flex-col gap-10 justify-start items-center py-20 px-5 lg:px-30 bg-black min-h-screen"
+      >
         <EfectoAparecer
           size="min-h-[120px]"
           translate="translate-y-full"
@@ -177,7 +187,10 @@ export default function Page2({
               idFigure="dfdfsdrtw"
               delay={4000}
             >
-              <BottonPer text={data[lang].acciones_botonSeguir} referencia={hablemos}/>
+              <BottonPer
+                text={data[lang].acciones_botonSeguir}
+                referencia={hablemos}
+              />
             </EfectoAparecer>
           </div>
         </div>

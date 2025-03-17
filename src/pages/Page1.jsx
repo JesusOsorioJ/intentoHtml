@@ -112,8 +112,29 @@ export default function Page1({
           </div>
         </EfectoAparecer>
 
-        
-          <Carrusel images={["21.png", "22.png", "23.png", "21.png", "22.png", "23.png"]} />
+        <Carrusel
+          images={["21.png", "22.png", "23.png", "21.png", "22.png", "23.png"]}
+        />
+
+        <EfectoAparecer
+          delay={4500}
+          size="min-h-[120px]"
+          translate="translate-y-full"
+          idFigure="ghfghy63"
+        >
+          <button
+            onClick={() =>
+              hablemos.current?.scrollIntoView({ behavior: "smooth" })
+            }
+            href="#portafolio"
+            className="w-[250px] text-[20px] group bg-[#005F73] max-h-[50px] relative flex flex-col overflow-y-hidden"
+          >
+            <div className="z-[10] min-h-[50px] mx-6 hover:text-black duration-500 ease-in-out flex flex-col items-center justify-center">
+              {data[lang].acciones_botonSeguir}
+            </div>
+            <div className="absolute z-1 top-0 min-h-[50px] w-full translate-y-full group-hover:translate-y-0 duration-500 ease-in-out bg-white" />
+          </button>
+        </EfectoAparecer>
       </section>
 
       {/* Sección 3 */}
@@ -129,7 +150,7 @@ export default function Page1({
             onClick={() => {
               hablemos.current?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="flex justify-center items-center h-[55px] w-[228px] bg-[#E9D8A6] rounded-[20px] text-black"
+            className="flex justify-center items-center h-[55px] w-[228px] bg-[#E9D8A6] hover:bg-[#a89c78] rounded-[20px] text-black"
           >
             {data[lang].nav_hablemos}
           </button>

@@ -133,10 +133,10 @@ export const Carrusel = ({ images }) => {
       }}
       
     >
-      {images.map((d) => (
-        <SwiperSlide key={d}>
+      {images.map((d,i) => (
+        <SwiperSlide key={i}>
           <div className="flex flex-col gap-1">
-          <img src={`src/assets/${d}`} className="h-[335px] w-[440px]" alt={d}  />
+          <img src={`/assets/${d}`} className="h-[335px] w-[440px]" alt={d}  />
           <div>
             <p className="text-[18px] font-[600]">
               Lorem ipsum dolor sit ame - 14x10’’{d}
