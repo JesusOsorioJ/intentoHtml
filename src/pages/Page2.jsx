@@ -44,7 +44,7 @@ export default function Page2({
 
       <section
         className="flex flex-col justify-between gap-10 items-center py-30 px-10 lg:px-30
-      bg-[url(./assets/obama.jpg)]  bg-cover min-h-screen w-full bg-blend-multiply bg-[#000000a8]
+      bg-[url(/assets/obama.jpg)]  bg-cover min-h-screen w-full bg-blend-multiply bg-[#000000a8]
       "
       >
         <div className="flex flex-col gap-5 items-center">
@@ -115,8 +115,8 @@ export default function Page2({
               />
             </EfectoAparecer>
           </div>
-          <div className="size-[200px] lg:hidden my-[-60px] bg-[url(./assets/comida1.jpg)] bg-cover" />
-          <div className="size-[200px] lg:hidden self-end bg-[url(./assets/comida3.jpg)] bg-cover" />
+          <div className="size-[200px] lg:hidden my-[-60px] bg-[url(/assets/comida1.jpg)] bg-cover" />
+          <div className="size-[200px] lg:hidden self-end bg-[url(/assets/comida3.jpg)] bg-cover" />
           <div className="hidden lg:flex flex-col ">
             <EfectoAparecer
               className="ml-20 my-[-30px] min-w-[400px]"
@@ -124,7 +124,7 @@ export default function Page2({
               translate="translate-y-full"
               idFigure="hge4tree"
             >
-              <div className="h-[200px] w-[400px] bg-[url(./assets/comida1.jpg)] bg-cover" />
+              <div className="h-[200px] w-[400px] bg-[url(/assets/comida1.jpg)] bg-cover" />
             </EfectoAparecer>
             <EfectoAparecer
               className="min-w-[400px]"
@@ -133,13 +133,13 @@ export default function Page2({
               idFigure="jghjghj"
               delay={300}
             >
-              <div className="h-[300px] w-[400px] bg-[url(./assets/comida3.jpg)] bg-cover" />
+              <div className="h-[300px] w-[400px] bg-[url(/assets/comida3.jpg)] bg-cover" />
             </EfectoAparecer>
           </div>
         </div>
       </section>
 
-      <div className="bg-[url(./assets/landing2.jpg)] bg-cover h-[50vh] w-full bg-blend-multiply bg-[#00000073]" />
+      <div className="bg-[url(/assets/landing2.jpg)] bg-cover h-[50vh] w-full bg-blend-multiply bg-[#00000073]" />
 
       <section
         ref={fotografia}
@@ -153,8 +153,8 @@ export default function Page2({
           <p className="text-[60px] uppercase">{data[lang].iamphotografer}</p>
         </EfectoAparecer>
         <div className="flex flex-col lg:flex-row gap-20">
-          <div className="size-[200px] lg:hidden mb-[-60px] bg-[url(./assets/obama.jpg)] bg-cover" />
-          <div className="size-[200px] lg:hidden self-end bg-[url(./assets/landing2.jpg)] bg-cover" />
+          <div className="size-[200px] lg:hidden mb-[-60px] bg-[url(/assets/obama.jpg)] bg-cover" />
+          <div className="size-[200px] lg:hidden self-end bg-[url(/assets/landing2.jpg)] bg-cover" />
           <div className="hidden lg:flex flex-col ">
             <EfectoAparecer
               className="ml-20 my-[-30px] min-w-[400px]"
@@ -162,7 +162,7 @@ export default function Page2({
               translate="translate-y-full"
               idFigure="hffghyrt"
             >
-              <div className="h-[200px] w-[400px] bg-[url(./assets/obama.jpg)] bg-cover" />
+              <div className="h-[200px] w-[400px] bg-[url(/assets/obama.jpg)] bg-cover" />
             </EfectoAparecer>
             <EfectoAparecer
               className="min-w-[400px]"
@@ -171,7 +171,7 @@ export default function Page2({
               idFigure="rwerwerw"
               delay={300}
             >
-              <div className="h-[300px] w-[400px] bg-[url(./assets/landing2.jpg)] bg-cover" />
+              <div className="h-[300px] w-[400px] bg-[url(/assets/landing2.jpg)] bg-cover" />
             </EfectoAparecer>
           </div>
           <div className="flex flex-col justify-center">

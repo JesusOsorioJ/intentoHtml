@@ -39,10 +39,10 @@ export default function Page1({
       />
       <section
         ref={inicio}
-        className="flex justify-end bg-[url(./assets/landing.png)] bg-cover min-h-screen"
+        className="flex justify-end bg-[url(/assets/landing.png)] bg-cover min-h-screen"
       >
         <div className="flex flex-col gap-[30px] items-end px-[120px] py-[80px] justify-between">
-          <div className="bg-[url(./assets/logoJuanLeon.png)] h-[160px] w-[250px] bg-cover" />
+          <div className="bg-[url(/assets/logoJuanLeon.png)] h-[160px] w-[250px] bg-cover" />
 
           <div className="flex flex-col gap-9 w-fit lg:m-[60px]">
             <EfectoAparecer
@@ -88,7 +88,7 @@ export default function Page1({
         </div>
       </section>
 
-      <div className="bg-[url(./assets/landing2.jpg)] h-[60vh] w-screen bg-cover bg-blend-multiply bg-[#000000a8]" />
+      <div className="bg-[url(/assets/landing2.jpg)] h-[60vh] w-screen bg-cover bg-blend-multiply bg-[#000000a8]" />
 
       {/* Sección 2 */}
       <section
