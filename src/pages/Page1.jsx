@@ -117,7 +117,6 @@ export default function Page1({
         />
 
         <EfectoAparecer
-          delay={4500}
           size="min-h-[120px]"
           translate="translate-y-full"
           idFigure="ghfghy63"
