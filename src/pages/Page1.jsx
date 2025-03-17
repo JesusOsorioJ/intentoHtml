@@ -6,7 +6,7 @@ import {
   EfectoPrincipal,
   Footer,
   Menu,
-} from "../components";
+} from "../MyComponent";
 
 export default function Page1({
   inicio,
